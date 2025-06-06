@@ -1,0 +1,6 @@
+The problem is asking value of D[n], number of possible dearrangements of n objects.
+Some properties of D[n]:
+1) D[n]=(n-1)*(D[n-1]+D[n-2])
+2) D[n]=n*D[n-1]=(-1)^(n)
+So we iteratively find the value of D[n] using (1), taking D[1]=0 and D[2]=1.
+CODE: https://cses.fi/paste/59f2a9cd823994c7c960fd/
