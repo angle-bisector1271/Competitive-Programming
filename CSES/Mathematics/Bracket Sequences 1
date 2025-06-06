@@ -1,0 +1,4 @@
+This problem is a famous instance of catalan numbers, and the number of ways is the nth catalan number, (2n)C(n)/(n+1). 
+You can read about catalan numbers and number of valid bracketings or number of subdiagonal gridwalks on internet.
+To learn how to compute the binomial coefficient, solve the CSES problem on binomial coefficients.
+https://cses.fi/paste/ef4ac5ef0cbfcdcac963c8/
