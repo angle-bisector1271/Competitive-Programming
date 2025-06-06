@@ -1,0 +1,9 @@
+1) Distance between two consecutive primes is asymptotically close to constant times log(n) by the prime number theorem, and number of primes less than n is almost n/log(n).
+2) This means that we can iterate over n,n+1... since we would only need ot process a few integers.
+3) For each integer in the loop, we would check if it is a prime.
+4) Vanilla prime check by iterating from 2 to root(n) would be slow for large n. We use miller-rabin piramilty checking, which has O(log(n)^3) complexity.
+NOW WHAT IS miller-rabin primality checking method?
+Recall that fermat's little theorem says that a^(n-1)mod(n) is 1 for all prime n that don't divide a. So if an integer doesnt satisfy this, it is definitely compositie.
+Research papers have shown that taking a as the first 5 primes and checking primality using them is enough to deterministically tell if n is prime for n<1e15.
+Therefore miller-rabin test just checks if a^(n-1)mod(n) is 1 for the first 5 primes, and returns a deterministic answer.
+MY CODE: https://cses.fi/paste/8dcc8050899d1030c95497/
