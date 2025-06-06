@@ -1,6 +1,6 @@
 We need to compute nCr or n!/[(r)!(n-r)!], and we need to do this t times.
 1) We precompute all factorials of integers <=1e6 to avoid redundant computation.
-2) We observe that (a/b) mod m = (a mod m)*(b^(-1) mod m) and since m is prime, b^(-1) mod m is equal to b(m-2) mod m from fermat's little theorem.
+2) We observe that (a/b) mod m = (a mod m)*(b^(-1) mod m) and since m is prime, b^(-1) mod m is equal to b(m-2) mod m from fermat's little theorem. (m is prime here).
 3) Thus we use pow(den,m-2,m) function which is highly optimized.
 4) Final answer is num*pow(den,m-2,m) mod (m) where num is n! mod m and den is r!*(n-r)!mod m and precomputed factorials are used.
 CODE: https://cses.fi/paste/94f7af37bc0fc262c962df/
