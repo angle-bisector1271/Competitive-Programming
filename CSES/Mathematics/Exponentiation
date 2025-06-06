@@ -1,0 +1,7 @@
+Binary exponentiation:
+Suppose we have to calculate n^m, we can think of m in terms of its binary representation.
+n^m=n^(2^m1+2^m2...)=n^(2^m1)*n^(2^m2)....
+Assuming m1<m2...
+we initialize our answer as 1.
+we square n m1 times and multiply with answer, then we square n m2-m1 times and multiply with answer and so on.
+Code: https://cses.fi/paste/13fbf5c319e6d444c95ff7/
