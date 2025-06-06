@@ -1,0 +1,3 @@
+We essentially have n non negative variable whose sum is m. The number of ways for this to happen is famously given as (n+m-1)C(n-1).
+To learn how to compute this binomial coefficient, solve the problem "Binomial Coefficients" on CSES.
+CODE: https://cses.fi/paste/7966caaca73e84adc96368/
