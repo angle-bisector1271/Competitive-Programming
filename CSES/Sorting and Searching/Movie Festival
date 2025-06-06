@@ -1,0 +1,2 @@
+Typical greedy algorithm. Keep attending movies that end the earliest. Try to prove this is optimal by swapping argument.
+CODE: https://cses.fi/paste/154e98080f84ba97c96ef6/
