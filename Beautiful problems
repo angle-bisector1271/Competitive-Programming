@@ -1,0 +1,9 @@
+1>>Given an array of size n<=2e5, for q queries of the type (l,r) find the count of the element 
+that occurs more than half of the times in this subarray, or tell if there is no such element.
+<<>>If the size of the subarray is less than 100, just run a for loop over its length. Otherwise,
+check 100 random numbers within that subarray to see if you find an element that has its count greater than or equal to (r-l+1)/2.
+The probability of missing this number is at max 1/2^100.
+2>>This is related to the previous problem. How to find the count of an element in a given subarray?
+<<>>For each integer in the array make a vector, that stores all indices of its occurance. 
+Now for a given (l,r), the number of occurances of this integer in this interval can be found by doing binary search over 
+the vector of occurances of this element for find first l and then r and then taking the difference of their indices in this vector.
